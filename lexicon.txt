@@ -33,3 +33,253 @@ hem          CONJ
 yine		 CONJ
 gene         CONJ
 meğer        CONJ
+başka        PART
+belli        PART
+beri         PART
+değin        PART
+dek          PART
+denli        PART
+derece       PART
+doğru        PART
+evet         PART
+gibi         PART
+ha           PART
+hayır        PART
+he           PART
+için         PART
+ila          PART
+işte         PART
+kadar        PART
+mesela       PART
+oldu         PART
+olur         PART
+örneğin      PART
+peki         PART
+tamam        PART
+temsil       PART
+üzere        PART
+ya           PART
+aç           VERB
+ağla         VERB
+ak           VERB
+al           VERB
+anla         VERB
+anlat        VERB
+ara          VERB
+art          VERB
+aş           VERB
+at           VERB
+ayır         VERB
+ayrıl        VERB
+azal!        VERB
+bağır        VERB
+bağla        VERB
+bak          VERB
+bas          VERB
+başla        VERB
+bekle        VERB
+belirle      VERB
+belirt       VERB
+benze        VERB
+bırak        VERB
+bil          VERB
+bin          VERB
+bitir        VERB
+bit          VERB
+boz          VERB
+bul          VERB
+büyü         VERB
+çalış        VERB
+çal          VERB
+çekil        VERB
+çek          VERB
+çevir        VERB
+çıkar        VERB
+çık          VERB
+çiz          VERB
+dayan        VERB
+değerlendir  VERB
+değiş        VERB
+değiştir     VERB
+de           VERB
+et           VERB
+dile         VERB
+dinle        VERB
+doğ          VERB
+dolaş        VERB
+doldur       VERB
+dön          VERB
+dönüş        VERB
+dur          VERB
+duy          VERB
+düş          VERB
+düşün        VERB
+düzenle      VERB
+ekle         VERB
+etkile       VERB
+et           VERB
+evlen        VERB
+geçir        VERB
+geç          VERB
+geliş        VERB
+geliştir     VERB
+gel          VERB
+gerçekleş    VERB
+gerek        VERB
+getir        VERB
+gir          VERB
+git          VERB
+giy          VERB
+gönder       VERB
+gör          VERB
+görün        VERB
+görüş        VERB
+göster       VERB
+götür        VERB
+gül          VERB
+hatırla      VERB
+hazırla      VERB
+hazırlan     VERB
+hisset       VERB
+iç           VERB
+ilerle       VERB
+ilgilen      VERB
+inan         VERB
+incele       VERB
+in           VERB
+iste         VERB
+izle         VERB
+kaç          VERB
+kaldır       VERB
+kalk         VERB
+kal          VERB
+kapan        VERB
+kapat        VERB
+karış        VERB
+karıştır     VERB
+karşıla      VERB
+karşılaş     VERB
+katıl        VERB
+kaybet       VERB
+kazan        VERB
+kes          VERB
+kıl          VERB
+konuş        VERB
+kork         VERB
+koru         VERB
+koş          VERB
+koy          VERB
+kullan       VERB
+kur          VERB
+kurtar       VERB
+kurtul       VERB
+kurul        VERB
+oku          VERB
+ol           VERB
+oluş         VERB
+otur         VERB
+oyna         VERB
+öde          VERB
+öğren        VERB
+öldür        VERB
+öl           VERB
+paylaş       VERB
+sağla        VERB
+ol           VERB
+san          VERB
+al           VERB
+sat          VERB
+say          VERB
+seç          VERB
+sev          VERB
+seyret       VERB
+sok          VERB
+sor          VERB
+söyle        VERB
+sun          VERB
+sürdür       VERB
+sür          VERB
+tanı         VERB
+taşı         VERB
+topla        VERB
+tut          VERB
+uğraş        VERB
+ulaş         VERB
+unut         VERB
+uygula       VERB
+uy           VERB
+uyu          VERB
+uzan         VERB
+uzat         VERB
+üret         VERB
+var          VERB
+ver          VERB
+vur          VERB
+yakala       VERB
+yaklaş       VERB
+yak          VERB
+yan          VERB
+yap          VERB
+yaptır       VERB
+yararlan     VERB
+yarat        VERB
+yaşa         VERB
+yat          VERB
+yayıl        VERB
+yayımla      VERB
+yaz          VERB
+ye           VERB
+yet          VERB
+yüksel       VERB
+yürü         VERB
+       
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
