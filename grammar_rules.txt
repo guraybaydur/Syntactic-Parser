@@ -44,8 +44,8 @@ Noun → araba | masa | bardak| ...
 2ndSgl → -(ı)n | -(i)n | -(u)n | -(ü)n
 3rdSgl → 𝞊 (empty string)
 1stPlr → -(ı)k | -(i)k | -(ü)k | -(u)k
-2ndPlr → -ınız | -iniz |-unuz | ünüz
-3rdPlr → -ılar | -iler |-ular | -üler
+2ndPlr → -(ı)nız | -(i)niz |-(u)nuz | -(ü)nüz
+3rdPlr → -(ı)lar | -(i)ler |-(u)lar | -(ü)ler
 
 OS (imperative suffix) → 𝞊 (empty string)
 TS (time suffix) → dı | di | r | mış | …
