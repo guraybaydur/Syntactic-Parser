@@ -1,0 +1,60 @@
+VP → Verb + IS (imperative suffix)
+VP → Verb + TS (time suffix) + PNS (pronoun suffix)
+VP → Verb + PS (passive suffix) + TS
+VP → NP + NTVS (noun-to-verb suffix)
+VP → Verb + QP (question phrase)
+VP → Verb + RS (requirement suffix) + PNS
+VP → Verb + RS + TS + PNS
+
+VP → NP VP
+
+S → VP
+S → NP VP
+S → NP AP VP
+S → Pronoun NP AP VP
+S → NP VP
+S → NP Adverb VP
+S →PP VP
+S → Adverb NP VP
+S → Pronoun Adverb PP NP VP
+S → NP CONJ NP VP
+
+
+
+NP → Noun NP
+NP → Y NP
+Y → NP CONJ
+NP → CONJ NP
+S → NP PP VP
+AP → ADJ Noun
+PP → NP + Prepositional
+NP → NP + DS(destination suffix)
+NP → NP + LS(location suffix)
+NP → NP + SS(source suffix)
+NP → NP + IS(instrument suffix)
+NP → NP + PS(plural suffix)
+NP → Noun NP
+
+Terminals
+Prepositional → gibi | -e göre | -a göre | için | -(i)le | -(y)la | -ce | -ca
+CONJ → ve | veya | ile | ,
+Verb → koş | gel | git | …
+Noun → araba | masa | bardak| ...
+1stSgl → -(ı)m | -(i)m | -(u)m | -(ü)m
+2ndSgl → -(ı)n | -(i)n | -(u)n | -(ü)n
+3rdSgl → 𝞊 (empty string)
+1stPlr → -(ı)k | -(i)k | -(ü)k | -(u)k
+2ndPlr → -ınız | -iniz |-unuz | ünüz
+3rdPlr → -ılar | -iler |-ular | -üler
+
+OS (imperative suffix) → 𝞊 (empty string)
+TS (time suffix) → dı | di | r | mış | …
+PNS (pronoun suffix) → lar | m | n | nız | …
+PS (passive suffix) → n | l | ...
+NTVS (noun-to-verb suffix) → dır | dir | …
+QP (question phrase) → mu | mi | …
+
+TBR
+RS (requirement suffix) → malı | meli
+WS (wish suffix) → a | e
+VP → Verb + WS (wish suffix) + PNS
