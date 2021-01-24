@@ -1,60 +1,84 @@
-VP → Verb + IS (imperative suffix)
-VP → Verb + TS (time suffix) + PNS (pronoun suffix)
-VP → Verb + PS (passive suffix) + TS
-VP → NP + NTVS (noun-to-verb suffix)
-VP → Verb + QP (question phrase)
-VP → Verb + RS (requirement suffix) + PNS
-VP → Verb + RS + TS + PNS
-
-VP → NP VP
-
-S → VP
-S → NP VP
-S → NP AP VP
-S → Pronoun NP AP VP
-S → NP VP
-S → NP Adverb VP
-S →PP VP
-S → Adverb NP VP
-S → Pronoun Adverb PP NP VP
-S → NP CONJ NP VP
-
-
-
-NP → Noun NP
-NP → Y NP
-Y → NP CONJ
-NP → CONJ NP
-S → NP PP VP
-AP → ADJ Noun
-PP → NP + Prepositional
-NP → NP + DS(destination suffix)
-NP → NP + LS(location suffix)
-NP → NP + SS(source suffix)
-NP → NP + IS(instrument suffix)
-NP → NP + PS(plural suffix)
-NP → Noun NP
-
-Terminals
-Prepositional → gibi | -e göre | -a göre | için | -(i)le | -(y)la | -ce | -ca
-CONJ → ve | veya | ile | ,
-Verb → koş | gel | git | …
-Noun → araba | masa | bardak| ...
-1stSgl → -(ı)m | -(i)m | -(u)m | -(ü)m
-2ndSgl → -(ı)n | -(i)n | -(u)n | -(ü)n
-3rdSgl → 𝞊 (empty string)
-1stPlr → -(ı)k | -(i)k | -(ü)k | -(u)k
-2ndPlr → -(ı)nız | -(i)niz |-(u)nuz | -(ü)nüz
-3rdPlr → -(ı)lar | -(i)ler |-(u)lar | -(ü)ler
-
-OS (imperative suffix) → 𝞊 (empty string)
-TS (time suffix) → dı | di | r | mış | …
-PNS (pronoun suffix) → lar | m | n | nız | …
-PS (passive suffix) → n | l | ...
-NTVS (noun-to-verb suffix) → dır | dir | …
-QP (question phrase) → mu | mi | …
-
-TBR
-RS (requirement suffix) → malı | meli
-WS (wish suffix) → a | e
-VP → Verb + WS (wish suffix) + PNS
+VP-->VP IS
+VP-->VP TS
+VP-->VP PNS 
+VP-->VERB PS
+VP-->VERB PS
+VP-->NP NTVS 
+VP-->QADV NTVS
+VP-->VP QP 
+VP-->Z NS 
+Z-->VERB PS
+Z-->VERB
+VP-->VERB
+VP--> AVERB
+VP-->NP VP
+VP-->QADV VP
+S-->NP NTVS 
+S-->QADV NTVS
+S-->VP QP 
+S-->Z NS
+S-->NP VP
+S-->QADV VP
+S-->VP IS 
+S-->VP TS 
+S-->VP PNS 
+S-->VERB PS
+S-->VP
+S-->NP NTVS 
+S-->NP VP
+S-->NP PP VP
+NP-->NP AP
+NP-->PRON NP
+NP-->NP NP
+NP-->NP ADVP
+NP-->ADVP NP
+NP-->PP NP
+NP-->PART NP
+NP-->NP PART
+NP-->NP NOUN
+ADJP-->ADJP NP
+ADJP-->ADJP ADJ
+ADVP-->ADVP ADV 
+ADVP-->ADV
+ADVP-->NP ADV
+ADVP-->ADJP NP
+ADVP-->ADJP ADVP
+QP-->ADVP VP
+QP-->QP PNS
+QP-->QP IC
+QP-->QS
+PRONP-->PRONP PRON
+PRONP-->PRON
+NP-->NOUN NP
+NP-->NP CONJ
+NP-->CONJ NP
+AP-->ADJ NOUN
+PP-->NP PART
+NP-->NP SP
+SP-->SP LS 
+SP-->SP DS 
+SP-->SP SS 
+SP-->SP PSS 
+SP-->SP IC
+SP--> IC 
+SP-->DS 
+SP-->LS 
+SP-->SS 
+SP-->PNS 
+PNS-->1stSgl 
+PNS-->2ndSgl
+PNS-->3rdSgl
+PNS-->1stPlr
+PNS-->2ndPlr
+PNS-->3rdPlr
+PSS-->1stSglPos
+PSS-->2ndSglPos
+PSS-->3rdSglPos
+PSS-->1stPlrPos
+PSS-->2ndPlrPos
+PSS-->3rdPlrPos
+TS-->FTS
+TS-->CTS
+TS-->STS
+TS-->KPTS
+TS-->HPTS
