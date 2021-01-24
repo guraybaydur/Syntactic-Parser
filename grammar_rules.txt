@@ -2,7 +2,6 @@ VP-->VP IS
 VP-->VP TS
 VP-->VP PNS 
 VP-->VERB PS
-VP-->VERB PS
 VP-->NP NTVS 
 VP-->QADV NTVS
 VP-->VP QP 
@@ -23,10 +22,7 @@ S-->VP IS
 S-->VP TS 
 S-->VP PNS 
 S-->VERB PS
-S-->VP
-S-->NP NTVS 
-S-->NP VP
-S-->NP PP VP
+S-->VP 
 NP-->NP AP
 NP-->PRON NP
 NP-->NP NP

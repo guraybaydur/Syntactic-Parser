@@ -257,7 +257,7 @@ böyle        ADJ
 aynı         ADJ
 ilk          ADJ
 ön           ADJ
-önemli(!)    ADJ
+önemli       ADJ
 alt          ADJ
 diğer        ADJ
 doğru        ADJ
@@ -1128,7 +1128,3 @@ fazlası      PRON
 nere         PRON
 kim          PRON
 hangisi      PRON
-
-
-
-
