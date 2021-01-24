@@ -233,6 +233,9 @@ ye           VERB
 yet          VERB
 yüksel       VERB
 yürü         VERB
+etmek		 AVERB
+eylemek		 AVERB
+kılmak		 AVERB
 bir          ADJ
 çok          ADJ
 bizim        ADJ
