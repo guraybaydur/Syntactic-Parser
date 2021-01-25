@@ -417,6 +417,7 @@ kırmızı      NOUN
 siyah        NOUN
 araba        NOUN
 hayvan       NOUN
+hediye		 NOUN
 su           NOUN
 şişe         NOUN
 kalem        NOUN

@@ -4,20 +4,33 @@ VP-->VP PNS
 VP-->VERB PS
 VP-->VERB KPTS
 SP-->KPTS 1stSgl
+SP-->KPTS 2ndSgl
+SP-->KPTS 3rdSgl
+SP-->KPTS 1stPlr
+SP-->KPTS 2ndPlr
+SP-->KPTS 3rdPlr
 VP-->VERB SP
 VP-->NP NTVS 
 VP-->QADV NTVS
 VP-->VP QP 
-VP-->Z NS 
+VP-->Z NS
+VP-->1stSglPos VP
+VP-->2ndSglPos VP
+VP-->3rdSglPos VP
+VP-->1stPlrPos VP
+VP-->2ndPlrPos VP
+VP-->3rdPlrPos VP 
 Z-->VERB PS
 Z-->VERB
 VP-->VERB
-VP--> AVERB
+VP-->AVERB
+S-->TADV VP
 VP-->NP VP
 VP-->QADV VP
 VP-->DS VERB
 VP-->DS VP
 VP-->NOUN VP
+VP-->ADJ VP
 S-->NP NTVS
 S-->PRON VP 
 S-->QADV NTVS
@@ -68,7 +81,12 @@ NP-->NOUN SP
 NP-->NOUN LS 
 NP-->NOUN DS 
 NP-->NOUN SS 
-NP-->NOUN PSS 
+NP-->NOUN 1stSglPos
+NP-->NOUN 2ndSglPos
+NP-->NOUN 3rdSglPos
+NP-->NOUN 1stPlrPos
+NP-->NOUN 2ndPlrPos
+NP-->NOUN 3rdPlrPos 
 NP-->NOUN IC 
 PNS-->1stSgl 
 PNS-->2ndSgl
