@@ -29,54 +29,49 @@ def parse_sentence(rules, sentence):
 
 
 #Decoding the parse, only parses the first possibility for now
-# z
-# # ├── c
-# # │   ├── a
-# # │   └── b
-# # ├── d
-# # ├── e
-# # │   └── asdf
-# # └── f
 # Bu şekilde basmaya çalışıcam tree'yi
 def bracket_form_parse(parse_list):
     bracket_form = ''
     # count = 0
     # TODO loop over second indices to include more than one parse
-    if len(parse_list) > 1: # add a loop over the second index
-        parent = parse_list[0][0][0]
-        terminal = parse_list[0][0][1][0].split()[0]
-        bracket_form += '[' + parent + ' [' + terminal + '] ' + bracket_form_parse(parse_list[1:]) + ']'
+    if len(parse_list) > 1:
+        parent = parse_list[0][0][0]  # parent node
+        terminal = parse_list[0][0][1][0].split()[0]  # terminal child
+        bracket_form = '[' + parent + ' [' + terminal + '] ' + bracket_form_parse(parse_list[1:]) + ']'
     else:
         parent = parse_list[0][0][0]
         bracket_form = ' [' + parent + ']'
 
-    # for i in parse_list:
-    #     bracket_form += '[' + i[0][0]
-    #     if count < len(parse_list) - 1:
-    #         temp_level = i[0][1][0].split()
-    #         bracket_form += ' [' + temp_level[0] + ' '
-    #         count += 1
-    #     else:
-    #         for j in range(count):
-    #             bracket_form += ']'
     return bracket_form
 
 
 #from bracket to tree
-def tree_form_parse(bracket_form):
-    tree = ''
-    take = False
-    temp_str = ''
-    for i in bracket_form:
-        if i == '[':
-            take = True
-        # if take
+def tree_form_parse(bracket_form, depth):
+    left_ind = bracket_form[1:].find('[')
+    # returns -1 if no left bracket found which means we have reached to the end of the tree
+    curr_depth = depth - bracket_form.count('[')//2
+    if left_ind != -1:
+        right_ind = bracket_form[1:].find(']')
+        parent = bracket_form[1:left_ind]
+        terminal = bracket_form[left_ind+2:right_ind+1]
+        next_branch_start = bracket_form[left_ind+2:].find('[')
+        tree = parent + '\n' + '\t'*curr_depth + '|--' + terminal + '\n' + '\t'*curr_depth + '|--' + tree_form_parse(bracket_form[next_branch_start+left_ind+2:], depth)
+    else:
+        right_ind = bracket_form.find(']')
+        terminal = bracket_form[1:right_ind]
+        tree = terminal
+
+    return tree
+
 
 
 if __name__ == '__main__':
     rules = load_rules()
     sentence = 'Ben okul a git ti m'
     sentence2 = 'Dün arkadaş ım a bir hediye al dı m'
-    parse_table, parse_list = parse_sentence(rules, sentence2)
+    parse_table, parse_list = parse_sentence(rules, sentence)
     bracket_form = bracket_form_parse(parse_list)
     print(bracket_form)
+    tree = tree_form_parse(bracket_form, bracket_form.count('[')//2)
+    print(tree)
+
