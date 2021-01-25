@@ -39,8 +39,16 @@ def read_suffixes(directory='../', file='suffix_list.txt'):
 
 def combine_dicts(x, y, z):
     t = x.copy()
-    t.update(y)
-    t.update(z)
+    for i in y.keys():
+        if i in t.keys():
+            t[i].append(y[i])
+        else:
+            t[i] = y[i]
+    for i in z.keys():
+        if i in t.keys():
+            t[i].extend(z[i])
+        else:
+            t[i] = z[i]
     return t
 
 def load_rules():
