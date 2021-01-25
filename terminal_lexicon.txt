@@ -1,11 +1,11 @@
 ama			 CONJ
 fakat        CONJ
-lâkin        CONJ
+lakin        CONJ
 ancak        CONJ
 yalnız       CONJ
 oysa         CONJ
 oysaki       CONJ
-hâlbuki      CONJ
+halbuki      CONJ
 ve           CONJ
 ile          CONJ
 ki           CONJ
@@ -1045,7 +1045,7 @@ ilkin        TADV
 yine         TADV
 demin        TADV
 daha         TADV
-hâlâ         TADV
+hala         TADV
 henüz        TADV
 derhal       TADV
 bazen        TADV

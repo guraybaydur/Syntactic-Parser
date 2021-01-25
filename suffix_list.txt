@@ -37,6 +37,10 @@ KPTS-->dı
 KPTS-->di
 KPTS-->du
 KPTS-->dü
+KPTS-->tı
+KPTS-->ti
+KPTS-->tu
+KPTS-->tü
 HPTS-->mış 
 HPTS-->miş
 HPTS-->muş
