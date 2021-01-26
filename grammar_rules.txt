@@ -108,3 +108,5 @@ TS-->HPTS
 SP-->CTS 1stSgl
 VP-->ADV VP
 VP-->PLS VP
+VP-->PART VP
+VP-->PRON S

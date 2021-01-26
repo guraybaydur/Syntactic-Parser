@@ -803,6 +803,7 @@ et           NOUN
 çizgi        NOUN
 üye          NOUN
 cilt         NOUN
+yemek        NOUN
 ruh          NOUN
 süreç        NOUN
 bakış        NOUN

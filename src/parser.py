@@ -71,8 +71,9 @@ if __name__ == '__main__':
     sentence = 'Ben okul a git ti m'
     sentence2 = 'Dün arkadaş ım a bir hediye al dı m'
     sentence3 = 'Tarihi roman lar ı keyifle oku yor um'
-    sentence4 = 'Ben dün akşam yemeği için anneme yardım ettim.'
-    parse_table, parse_list = parse_sentence(rules, sentence3)
+    sentence4 = 'Ben dün akşam yemek i için anne m e yardım et ti m'
+    #sentence5 = 'Destan lar milli kültürümüzü ve tarihimizi anlatır.'
+    parse_table, parse_list = parse_sentence(rules, sentence4)
     bracket_form = bracket_form_parse(parse_list)
     print(bracket_form)
     tree = tree_form_parse(bracket_form, bracket_form.count('[')//2)
