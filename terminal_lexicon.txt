@@ -594,6 +594,7 @@ araç         NOUN
 madde        NOUN
 tür          NOUN
 karar        NOUN
+karpuz       NOUN
 hava         NOUN
 sayı         NOUN
 grup         NOUN
@@ -804,6 +805,7 @@ et           NOUN
 üye          NOUN
 cilt         NOUN
 yemek        NOUN
+destan       NOUN
 ruh          NOUN
 süreç        NOUN
 bakış        NOUN
@@ -876,6 +878,7 @@ bebek        NOUN
 vatandaş     NOUN
 bakan        NOUN
 millet       NOUN
+milli        NOUN
 reklam       NOUN
 boyut        NOUN
 dergi        NOUN
@@ -994,6 +997,7 @@ meclis       NOUN
 adres        NOUN
 paşa         NOUN
 sıcaklık     NOUN
+yazılı       NOUN
 güven        NOUN
 marka        NOUN
 yaprak       NOUN
@@ -1009,7 +1013,12 @@ eylem        NOUN
 kesim        NOUN
 kriz         NOUN
 birim        NOUN
+mehtap       NOUN
+medeniyet    NOUN
+beşik        NOUN
+türkçe       PNOUN
 Ali          PNOUN
+anadolu      PNOUN
 Güray        PNOUN
 Mansur       PNOUN
 Tunga        PNOUN
@@ -1037,6 +1046,8 @@ Ferhat       PNOUN
 Kürşat       PNOUN
 Samed        PNOUN
 Salih        PNOUN
+orhun        PNOUN
+abide        PNOUN
 dün          TADV
 bugün        TADV
 yarın        TADV
@@ -1052,6 +1063,7 @@ hala         TADV
 henüz        TADV
 derhal       TADV
 bazen        TADV
+sesle        ADV
 biraz        ADV
 fazla        ADV
 çok          ADV

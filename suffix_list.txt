@@ -15,7 +15,9 @@
 1stPlr-->uz
 1stPlr-->üz
 2ndPlr-->ınız 
+2ndPlr-->nız
 2ndPlr-->iniz
+2ndPlr-->niz
 2ndPlr-->unuz
 2ndPlr-->ünüz
 3rdPlr-->ılar  
@@ -72,7 +74,9 @@ AS-->ı
 DS-->e
 DS-->a
 LS-->de
+LS-->te
 LS-->da
+LS-->ta
 SS-->den
 SS-->dan
 PLS-->ler
@@ -105,3 +109,5 @@ NCS-->ın
 NCS-->in
 NCS-->un
 NCS-->ün
+NS-->me
+NS-->ma
