@@ -582,6 +582,7 @@ halk         NOUN
 sokak        NOUN
 bey          NOUN
 tarih        NOUN
+tarihi       NOUN
 özellik      NOUN
 bölüm        NOUN
 akıl         NOUN

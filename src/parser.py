@@ -12,6 +12,7 @@ def parse_sentence(rules, sentence):
             break
         for i in reversed(range(j)):
             # (i,i)x(j,i+1) tüm kombinasyonlarını ara j,i'ye yaz
+            # i,k x k,j
             for x in table[i][i][0]:
                 for y in table[j][i+1][0]:
                     if type(y) != list and y != None:
@@ -69,7 +70,9 @@ if __name__ == '__main__':
     rules = load_rules()
     sentence = 'Ben okul a git ti m'
     sentence2 = 'Dün arkadaş ım a bir hediye al dı m'
-    parse_table, parse_list = parse_sentence(rules, sentence)
+    sentence3 = 'Tarihi roman lar ı keyifle oku yor um'
+    sentence4 = 'Ben dün akşam yemeği için anneme yardım ettim.'
+    parse_table, parse_list = parse_sentence(rules, sentence3)
     bracket_form = bracket_form_parse(parse_list)
     print(bracket_form)
     tree = tree_form_parse(bracket_form, bracket_form.count('[')//2)

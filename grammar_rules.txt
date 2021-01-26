@@ -105,3 +105,6 @@ TS-->CTS
 TS-->STS
 TS-->KPTS
 TS-->HPTS
+SP-->CTS 1stSgl
+VP-->ADV VP
+VP-->PLS VP
