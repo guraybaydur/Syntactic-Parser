@@ -49,6 +49,7 @@ HPTS-->muş
 HPTS-->müş
 PS-->ın 
 PS-->in
+PS-->n
 PS-->ıl
 PS-->il
 PS-->ul
@@ -67,7 +68,7 @@ QS-->mu
 QS-->mü
 IC-->s 
 IC-->y
-IC-->n
+ICN-->n
 IC-->ş
 AS-->i
 AS-->ı

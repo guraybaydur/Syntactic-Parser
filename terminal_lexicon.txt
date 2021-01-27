@@ -933,6 +933,7 @@ artış        NOUN
 kamu         NOUN
 sigorta      NOUN
 yaz          NOUN
+babam        NOUN
 yürek        NOUN
 belge        NOUN
 çaba         NOUN
