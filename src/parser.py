@@ -131,14 +131,24 @@ if __name__ == '__main__':
     sentence17 = 'Ben okul git ti m'
     sentence18 = 'Ben kitap oku n du'
     sentence19 = 'Ben okul da git ti m'
-    print('Example sentence: Destan lar milli kültür ümüz ü ve tarih imiz i anlat ır')
-    print('Example sentence: Tarihi roman lar ı keyifle oku yor um')
-    sentence = input('Please enter a sentence in the form provided in the examples\n')
+    print('Welcome to Turkish Syntactic Parser')
+    print('This project was implemented by Mansur Yeşilbursa and Güray Baydur as a part of course requirement for CMPE 561 in Fall 20 semester')
+
+    while 1:
+        print('----------*****----------')
+        print('Example sentence: Destan lar milli kültür ümüz ü ve tarih imiz i anlat ır')
+        print('Example sentence: Tarihi roman lar ı keyifle oku yor um')
+        sentence = input('Please enter a sentence in the form provided in the examples\n')
 
 
-    parse_table, parse_list, terms = parse_sentence(rules, sentence)
-    bracket_form = bracket_form_with_words(parse_list, terms)
-    print(bracket_form)
-    tree = tree_form_parse_with_words(bracket_form, bracket_form.count('[')//2)
-    print(tree)
+        parse_table, parse_list, terms = parse_sentence(rules, sentence)
+        bracket_form = bracket_form_with_words(parse_list, terms)
+        print('Parse in the bracket form')
+        print(bracket_form)
+        tree = tree_form_parse_with_words(bracket_form, bracket_form.count('[')//2)
+        print('Parse in the tree form')
+        print(tree)
+        command = input('Type exit if you want to finish execution, type anything if you want to continue\n')
+        if command.lower() == 'exit':
+            break
 
