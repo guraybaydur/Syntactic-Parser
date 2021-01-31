@@ -14,15 +14,17 @@ def parse_sentence(rules, sentence):
             # (i,i)x(j,i+1) tüm kombinasyonlarını ara j,i'ye yaz
             # i,k x k,j
             for x in table[i][i][0]:
-                for y in table[j][i+1][0]:
-                    if type(y) != list and y != None:
-                        temp_key = x + ' ' + y  # in order not to take subclauses i.e. [NP [NOUN DS]] here only take NP
-                        try:
-                            temp_list = rules[temp_key]
-                        except KeyError:
-                            continue
-                        for k in range(len(temp_list)):
-                            table[j][i].append([temp_list[k], [temp_key]])
+                for z in table[j][i+1]:
+                    for y in z:
+                        if type(y) != list and y != None:
+                            temp_key = x + ' ' + y  # in order not to take subclauses i.e. [NP [NOUN DS]] here only take NP
+                            try:
+                                temp_list = rules[temp_key]
+                            except KeyError:
+                                continue
+                            for k in range(len(temp_list)):
+                                if [temp_list[k], [temp_key]] not in table[j][i]:
+                                    table[j][i].append([temp_list[k], [temp_key]])
 
             if len(table[j][i]) == 0:  # if no combination of two elements found, insert None
                 table[j][i].append([None])
@@ -131,7 +133,7 @@ if __name__ == '__main__':
 
 
 
-    parse_table, parse_list, terms = parse_sentence(rules, sentence7)
+    parse_table, parse_list, terms = parse_sentence(rules, sentence4)
     bracket_form = bracket_form_with_words(parse_list, terms)
     print(bracket_form)
     tree = tree_form_parse_with_words(bracket_form, bracket_form.count('[')//2)
