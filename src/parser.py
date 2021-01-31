@@ -119,7 +119,7 @@ if __name__ == '__main__':
     sentence5 = 'Destan lar milli kültür ümüz ü ve tarih imiz i anlat ır'
     sentence6 = 'Yaz meyve ler in den karpuz bence en güzel meyve dir'
     sentence7 = 'Bu akşam ki toplantı ya katıl acak mı s ınız'
-    sentence8 = 'Bu ağaç ın alt ı n da her gece mehtap ı izle r di k' #TO BE REVISITED
+    sentence8 = 'Bu ağaç ın alt ı n da her gece mehtap ı izle r di k'
     sentence9 = 'Siz bura y a en son nezaman gel di niz'
     sentence10 = 'anadolu n un dört yan ı medeniyet in beşik i dir'
     sentence11 = 'Orhun Abide ler i Türkçe n in ilk yazılı örnek ler i dir'
@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
 
 
-    parse_table, parse_list, terms = parse_sentence(rules, sentence8)
+    parse_table, parse_list, terms = parse_sentence(rules, sentence14)
     bracket_form = bracket_form_with_words(parse_list, terms)
     print(bracket_form)
     tree = tree_form_parse_with_words(bracket_form, bracket_form.count('[')//2)
