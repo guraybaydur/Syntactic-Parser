@@ -1,5 +1,5 @@
 from preprocess_lexicon import load_rules
-
+import string
 
 def parse_sentence(rules, sentence):
     terms = sentence.lower().split()
@@ -26,7 +26,7 @@ def parse_sentence(rules, sentence):
 
             if len(table[j][i]) == 0:  # if no combination of two elements found, insert None
                 table[j][i].append([None])
-    return table, table[len(terms)-1]
+    return table, table[len(terms)-1], terms
 
 
 #Decoding the parse, only parses the first possibility for now
@@ -45,6 +45,28 @@ def bracket_form_parse(parse_list):
 
     return bracket_form
 
+def bracket_form_with_words(parse_list, sentence_list):
+
+    # count = 0
+    # TODO loop over second indices to include more than one parse
+    if len(parse_list) > 1:
+        parent = parse_list[0][0][0]  # parent node
+        terminal = parse_list[0][0][1][0].split()[0]  # terminal child
+        bracket_form = '[' + parent + ' [' + terminal + ' ' + sentence_list[0] + '] ' + \
+                       bracket_form_with_words(parse_list[1:], sentence_list[1:]) + ']'
+    else:
+        parent = parse_list[0][0][0]
+        bracket_form = ' [' + parent + ' ' + sentence_list[0] + ']'
+
+    return bracket_form
+
+def print_subscript(word):
+    alphabet = string.ascii_uppercase
+    trans = str.maketrans(alphabet, )
+    temp_word = ''
+    for i in word:
+        temp_word += '\\' + 'u209' + i
+    temp_word
 
 #from bracket to tree
 def tree_form_parse(bracket_form, depth):
@@ -57,6 +79,25 @@ def tree_form_parse(bracket_form, depth):
         terminal = bracket_form[left_ind+2:right_ind+1]
         next_branch_start = bracket_form[left_ind+2:].find('[')
         tree = parent + '\n' + '\t'*curr_depth + '|--' + terminal + '\n' + '\t'*curr_depth + '|--' + tree_form_parse(bracket_form[next_branch_start+left_ind+2:], depth)
+    else:
+        right_ind = bracket_form.find(']')
+        terminal = bracket_form[1:right_ind]
+        tree = terminal
+
+    return tree
+
+def tree_form_parse_with_words(bracket_form, depth):
+    left_ind = bracket_form[1:].find('[')
+    # returns -1 if no left bracket found which means we have reached to the end of the tree
+    curr_depth = depth - bracket_form.count('[')//2
+    if left_ind != -1:
+        right_ind1 = bracket_form[left_ind+1:].find(' ')
+        right_ind2 = bracket_form[1:].find(']')
+        parent = bracket_form[1:left_ind]
+        terminal = bracket_form[left_ind+2:left_ind + right_ind1+1]
+        terminal_word = bracket_form[left_ind+right_ind1+2:right_ind2+1]
+        next_branch_start = bracket_form[left_ind+2:].find('[')
+        tree = parent + '\n' + '\t'*curr_depth + '|--' + terminal + '--> ' + terminal_word + '\n' + '\t'*curr_depth + '|--' + tree_form_parse_with_words(bracket_form[next_branch_start+left_ind+2:], depth)
     else:
         right_ind = bracket_form.find(']')
         terminal = bracket_form[1:right_ind]
@@ -89,9 +130,10 @@ if __name__ == '__main__':
     sentence19 = 'Ben okul da git ti m'
 
 
-    parse_table, parse_list = parse_sentence(rules, sentence4)
-    bracket_form = bracket_form_parse(parse_list)
+
+    parse_table, parse_list, terms = parse_sentence(rules, sentence7)
+    bracket_form = bracket_form_with_words(parse_list, terms)
     print(bracket_form)
-    tree = tree_form_parse(bracket_form, bracket_form.count('[')//2)
+    tree = tree_form_parse_with_words(bracket_form, bracket_form.count('[')//2)
     print(tree)
 
