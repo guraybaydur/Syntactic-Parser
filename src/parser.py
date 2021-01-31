@@ -90,6 +90,7 @@ def tree_form_parse(bracket_form, depth):
 
 def tree_form_parse_with_words(bracket_form, depth):
     left_ind = bracket_form[1:].find('[')
+    tree = ''
     # returns -1 if no left bracket found which means we have reached to the end of the tree
     curr_depth = depth - bracket_form.count('[')//2
     if left_ind != -1:
