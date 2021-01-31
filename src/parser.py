@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
 
 
-    parse_table, parse_list, terms = parse_sentence(rules, sentence4)
+    parse_table, parse_list, terms = parse_sentence(rules, sentence8)
     bracket_form = bracket_form_with_words(parse_list, terms)
     print(bracket_form)
     tree = tree_form_parse_with_words(bracket_form, bracket_form.count('[')//2)
