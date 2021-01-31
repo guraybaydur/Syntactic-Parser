@@ -133,7 +133,6 @@ if __name__ == '__main__':
     sentence19 = 'Ben okul da git ti m'
 
 
-
     parse_table, parse_list, terms = parse_sentence(rules, sentence14)
     bracket_form = bracket_form_with_words(parse_list, terms)
     print(bracket_form)
