@@ -129,7 +129,7 @@ gerçekleş    VERB
 gerek        VERB
 getir        VERB
 gir          VERB
-git          VERB
+git          VERBSPEC
 giy          VERB
 gönder       VERB
 gör          VERB
@@ -236,7 +236,7 @@ yürü         VERB
 etmek		 AVERB
 eylemek		 AVERB
 kılmak		 AVERB
-bir          ADJ
+bir          SINGADJ
 çok          ADJ
 bizim        ADJ
 sizin        ADJ
@@ -582,7 +582,7 @@ halk         NOUN
 sokak        NOUN
 bey          NOUN
 tarih        NOUN
-tarihi       NOUN
+tarihi       ADJ
 özellik      NOUN
 bölüm        NOUN
 akıl         NOUN
@@ -1049,7 +1049,7 @@ Samed        PNOUN
 Salih        PNOUN
 orhun        PNOUN
 abide        PNOUN
-dün          TADV
+dün          TADVPAST
 bugün        TADV
 yarın        TADV
 akşam        TADV
@@ -1058,7 +1058,7 @@ geceleyin    TADV
 ilkin        TADV
 şimdilik     TADV
 yine         TADV
-demin        TADV
+demin        TADVPAST
 daha         TADV
 hala         TADV
 henüz        TADV
@@ -1102,12 +1102,12 @@ niçin        QADV
 nasıl        QADV
 nezaman      QADV
 nekadar      QADV
-ben          PRON
-sen          PRON
-o            PRON
-biz          PRON
-siz          PRON
-onlar        PRON
+ben          PRON1
+sen          PRON2
+o            PRON3
+biz          PRON4
+siz          PRON5
+onlar        PRON6
 bu           PRON
 şu           PRON
 o            PRON

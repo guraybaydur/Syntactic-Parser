@@ -89,7 +89,7 @@ if __name__ == '__main__':
     sentence19 = 'Ben okul da git ti m'
 
 
-    parse_table, parse_list = parse_sentence(rules, sentence18)
+    parse_table, parse_list = parse_sentence(rules, sentence4)
     bracket_form = bracket_form_parse(parse_list)
     print(bracket_form)
     tree = tree_form_parse(bracket_form, bracket_form.count('[')//2)
