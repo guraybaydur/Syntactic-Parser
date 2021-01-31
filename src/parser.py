@@ -28,6 +28,11 @@ def parse_sentence(rules, sentence):
 
             if len(table[j][i]) == 0:  # if no combination of two elements found, insert None
                 table[j][i].append([None])
+
+    if table[-1][0][0][0] is None:
+        print('There is no possible parse for this sentence')
+        return None, None, None
+
     return table, table[len(terms)-1], terms
 
 
@@ -142,6 +147,8 @@ if __name__ == '__main__':
 
 
         parse_table, parse_list, terms = parse_sentence(rules, sentence)
+        if parse_table is None:
+            continue
         bracket_form = bracket_form_with_words(parse_list, terms)
         print('Parse in the bracket form')
         print(bracket_form)
