@@ -21,7 +21,9 @@
 2ndPlr-->unuz
 2ndPlr-->ünüz
 3rdPlr-->ılar  
+3rdPlr-->lar
 3rdPlr-->iler
+3rdPlr-->ler
 3rdPlr-->ular
 3rdPlr-->üler
 IS-->𝞊 
