@@ -67,6 +67,18 @@ def bracket_form_with_words(parse_list, sentence_list):
 
     return bracket_form
 
+
+def remove_first_parse(parse_list):
+    if len(parse_list[0]) > 1:
+        if parse_list[0][0][0] != 'S':
+            del parse_list[0][0]
+
+
+
+
+
+
+
 def print_subscript(word):
     alphabet = string.ascii_uppercase
     trans = str.maketrans(alphabet, )
@@ -149,6 +161,7 @@ if __name__ == '__main__':
         parse_table, parse_list, terms = parse_sentence(rules, sentence)
         if parse_table is None:
             continue
+        remove_first_parse(parse_list)
         bracket_form = bracket_form_with_words(parse_list, terms)
         print('Parse in the bracket form')
         print(bracket_form)
