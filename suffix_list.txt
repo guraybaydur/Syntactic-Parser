@@ -114,3 +114,7 @@ NCS-->un
 NCS-->ün
 NS-->me
 NS-->ma
+CTS-->ıyor
+CTS-->iyor
+CTS-->üyor
+CTS-->uyor
