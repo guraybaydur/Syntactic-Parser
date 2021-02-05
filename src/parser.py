@@ -9,7 +9,7 @@ def parse_sentence(rules, sentence):
             table[j][j] = [rules[terms[j]]]
         except KeyError:
             print('Terminal not in the lexicon, can\'t parse')
-            break
+            return None, None, None
         for i in reversed(range(j)):
             # (i,i)x(j,i+1) tüm kombinasyonlarını ara j,i'ye yaz
             # i,k x k,j
@@ -150,6 +150,10 @@ if __name__ == '__main__':
     sentence19 = 'Ben okul da git ti m'
     sentence20 = 'Ev e meyve al dı n mı'
     sentence21 = 'her gün koş uyor mu s un'
+    sentence22 = 'Adam lar ın kafa lar ın dan hayal ler geç iyor du'
+    sentence23 = 'işçi ler erken den yol a çık tı lar'
+    sentence24 = 'Haber gazete n in ilk sayfa s ı n da y dı'
+    sentence25 = 'nere de kal dı n'
     print('Welcome to Turkish Syntactic Parser')
     print('This project was implemented by Mansur Yeşilbursa and Güray Baydur as a part of course requirement for CMPE 561 in Fall 20 semester')
 

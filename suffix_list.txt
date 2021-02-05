@@ -72,7 +72,7 @@ QS-->mu
 QS-->mü
 IC-->s 
 IC-->y
-ICN-->n
+IC-->n
 IC-->ş
 AS-->i
 AS-->ı
