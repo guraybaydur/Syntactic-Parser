@@ -64,6 +64,8 @@ NTVS-->tur
 NTVS-->tür
 NTVS-->tır
 NTVS-->tir
+NTVS-->dı
+NTVS-->di
 QS-->mı
 QS-->mi
 QS-->mu
