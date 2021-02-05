@@ -124,7 +124,7 @@ geçir        VERB
 geç          VERB
 geliş        VERB
 geliştir     VERB
-gel          VERB
+gel          VERBSPEC
 gerçekleş    VERB
 gerek        VERB
 getir        VERB
