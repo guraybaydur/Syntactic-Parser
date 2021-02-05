@@ -148,6 +148,8 @@ if __name__ == '__main__':
     sentence17 = 'Ben okul git ti m'
     sentence18 = 'Ben kitap oku n du'
     sentence19 = 'Ben okul da git ti m'
+    sentence20 = 'Ev e meyve al dı n mı'
+    sentence21 = 'her gün koş uyor mu s un'
     print('Welcome to Turkish Syntactic Parser')
     print('This project was implemented by Mansur Yeşilbursa and Güray Baydur as a part of course requirement for CMPE 561 in Fall 20 semester')
 
